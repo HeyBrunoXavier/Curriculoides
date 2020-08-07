@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  body {
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F11712, #7159c1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F11712, #7159c1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  div.main{
+    margin: 20px 0;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 7px;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:200px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    color: white;
+  }
+  div .btn-login:hover{
+    background: linear-gradient(to bottom right, #33ccff 0%, #7159c1 100%);
+    border-color: transparent; 
+  }
+  div .btn-login2:hover{
+    background: linear-gradient(to bottom right, #F11712 0%, #7159c1 100%);
+    border-color: transparent; 
+  }
+  div .btn-login2{
+    display: inline-block;
+    min-width: 120px;
+    border: none;
+    background-color: #F11712;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+    transition: all 1.5s;
+    cursor: pointer;
+  }
+  
+  div .btn-login {
+    display: inline-block;
+    min-width: 120px;
+    border: none;
+    background-color: #3D7FCB;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+    transition: all 1.5s;
+    cursor: pointer;
+  }
+  /* ANIMATION */
+  div .btn-login{
+    animation: move 1s;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards ;
+  }
+  div .btn-login2{
+    animation: move 1s;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards ;
+  }
+  @keyframes move{
+    from{
+      opacity: 0;
+      transform: translateX(-35%);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fade {
+    from{
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+   Squares 
+  body {
+    overflow: hidden;
+  }
+  .squares li {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    animation: up 2s infinite alternate;
+    z-index:-1
+  }
+  
+  @keyframes up {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-800px) rotate(960deg);
+    }
+  }
+  
+  
