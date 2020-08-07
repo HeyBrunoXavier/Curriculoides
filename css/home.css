@@ -40,6 +40,7 @@
     margin: 20px 0;
     color: white;
   }
+  
   div .btn-login:hover{
     background: linear-gradient(to bottom right, #33ccff 0%, #7159c1 100%);
     border-color: transparent; 
@@ -74,6 +75,11 @@
     cursor: pointer;
   }
   /* ANIMATION */
+  h1 {
+    animation: move 1s;
+    animation-delay: 0.5ms;
+    animation-fill-mode: backwards;
+  }
   div .btn-login{
     animation: move 1s;
     animation-delay: 250ms;
